@@ -1,7 +1,6 @@
 # Project specific files #
 ##########################
-stortebrokr/config.py
-stortebrokr/iospush.pem
+pogom/__init__.py
 
 # Compiled source #
 ###################

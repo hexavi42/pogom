@@ -140,6 +140,7 @@ def search(args, req_sleep=1):
             break
 
         i += 1
+	time.sleep(0.5)
 
 
 def search_async(args):
@@ -239,6 +240,8 @@ def search_loop_async(args):
 def search_loop(args):
     global scan_start_time
     while True:
+	throttle()
+
         scan_start_time = time.time()
         search(args)
         log.info("Finished scan")
